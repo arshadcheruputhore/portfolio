@@ -6,18 +6,17 @@
   scroll-behavior: smooth;
 }
 body{
-    font-family: "Barlow", sans-serif;
     background: rgb(255,255,255);
     background: linear-gradient(243deg, rgba(255, 255, 255, 0.123) 0%, rgba(255, 168, 87, 0.103) 41%, rgba(221, 122, 170, 0.089) 98%);
     overflow-x: hidden;
+    font-family: "Barlow", sans-serif;
   }
 section{
-    height: 100vh;
     width: 100vw;
     padding: 0;
     margin: 0;
 }
-.bd-a {
+/* .bd-a {
   position: relative;
   overflow: hidden;
 }
@@ -26,19 +25,19 @@ section{
   position: absolute;
   left: 0;
   top: 0;
-  height: 2px; /* Border height */
+  height: 2px; 
   width: 100%;
-  background-color: orange; /* Border color */
+  background-color: orange;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
 }
 .bd-a:hover::before {
   transform: scaleX(1);
-}
-.pic{
+} */
+/* .pic{
   border-radius: 15%;
-}
+} */
 .playfont-hd{
     font-family: "Playfair Display", serif;
 }

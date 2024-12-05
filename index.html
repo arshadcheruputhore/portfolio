@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
+
+  <!-- link google-fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+  <!-- link font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- link-box-icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <meta property="og:title" content="mohammed arshad | full stack developer - MERN" />
   <meta property="og:description" content="I am an enthusiastic web developer specializing in the MERN stack, with extensive experience in website and product design." />
   <meta property="og:image" content="https://arshadc01.github.io/portfolio/images/Untitled-2 (1).png" />
-  <script src="index.js"></script>
 
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -27,48 +32,56 @@
 </script>
 
   <link rel="icon" type="image/x-icon" href="images/F__1_-removebg-preview (1).png">
-  <link rel="stylesheet" href="style.css">
+  <link href="./src/output.css" rel="stylesheet">
+
   <title>mohammed arshad | full stack developer - MERN</title>
 
 </head>
 <body class="m-0 p-0">
 
     <!-- section-home -->
-    <section class="flex justify-center flex-wrap">
-        <header class="w-[80%] h-full" id="home">
-            <nav class="flex justify-between items-center h-[10%]">
-                    <div>
-                        <a href=""><img src="images/Add_a_heading__1_-removebg-preview.png" alt="" class="w-[300px] bg-transparent"></a>
+    <section class="flex justify-center md:h-screen h-auto">
+        <header class="lg:w-[80%] w-[90%] h-full" id="home">
+            <nav class="flex justify-between md:items-start md:h-[10%] h-14 items-center">
+                    <div class="md:w-72 max-sm:w-52 sm:w-60 md:h-full">
+                        <a href=""><img src="images/Add_a_heading__1_-removebg-preview.png" alt="" class="w-full bg-transparent"></a>
                     </div>
                 
-                <div class="">
-                    <ul class="flex gap-10 barlow-nav uppercase">
-                        <a href="#home"><li class="text-orange-500 font-semibold text-base hover:text-orange-500 bd-a leading-[78px]" title="Home page">Home</li></a>
-                        <a href="#about"><li class="text-gray-500 font-medium text-base hover:text-orange-500 bd-a leading-[78px]" title="About me">About</li></a>
-                        <a href="#skills"><li class="text-gray-500 font-medium text-base hover:text-orange-500 bd-a leading-[78px]" title="My skills">Skills</li></a>
-                        <a href="#projects"><li class="text-gray-500 font-medium text-base hover:text-orange-500 bd-a leading-[78px]" title="My porjects">Projects</li></a>
-                        <a href="#contact"><li class="flex items-center text-gray-500 font-medium text-base hover:text-orange-500 bd-a leading-[78px] group" title="Contact Me">Contact
+                    <input type="checkbox" name="" id="nav-check" class="hidden peer">
+
+                <div class="max-lg:opacity-0 peer-checked:opacity-100 max-lg:pointer-events-none peer-checked:pointer-events-auto lg:block transition-opacity duration-200 max-lg:absolute max-lg:z-10 md:top-[10%] max-lg:left-0 max-md:top-14">
+                    <ul class="flex lg:gap-14 uppercase flex-col lg:flex-row lg:items-center max-lg:bg-white max-lg:w-screen max-lg:h-[40%]">
+                        <li class="text-orange-500 font-semibold text-base hover:text-orange-500 leading-[65px] max-lg:border-b max-lg:pl-5 lg:relative lg:overflow-hidden group" title="Home page">  <a href="#home" class="group-hover:before:scale-x-100 lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:h-[2px] lg:before:w-full lg:before:bg-orange-500 lg:before:origin-left lg:before:transition-transform lg:before:scale-x-0 h-full flex items-center">
+                        Home</a></li>
+                        <li class="text-gray-500 font-medium text-base hover:text-orange-500 leading-[65px] max-lg:border-b max-lg:pl-5 lg:relative lg:overflow-hidden group" title="About me"><a href="#about" class="group-hover:before:scale-x-100 lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:h-[2px] lg:before:w-full lg:before:bg-orange-500 lg:before:origin-left lg:before:transition-transform lg:before:scale-x-0 h-full flex items-center">About</a></li>
+                        <li class="text-gray-500 font-medium text-base hover:text-orange-500 leading-[65px] max-lg:border-b max-lg:pl-5 lg:relative lg:overflow-hidden group" title="My skills"><a href="#skills" class="group-hover:before:scale-x-100 lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:h-[2px] lg:before:w-full lg:before:bg-orange-500 lg:before:origin-left lg:before:transition-transform lg:before:scale-x-0 h-full flex items-center">Skills</a></li>
+                        <li class="text-gray-500 font-medium text-base hover:text-orange-500 leading-[65px] max-lg:border-b max-lg:pl-5 lg:relative lg:overflow-hidden group" title="My porjects"><a href="#projects" class="group-hover:before:scale-x-100 lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:h-[2px] lg:before:w-full lg:before:bg-orange-500 lg:before:origin-left lg:before:transition-transform lg:before:scale-x-0 h-full flex items-center">Projects</a></li>
+                        <li class="flex items-center text-gray-500 font-medium text-base hover:text-orange-500 leading-[65px] group max-lg:border-b max-lg:pl-5 lg:relative lg:overflow-hidden group" title="Contact Me"><a href="#contact" class="group-hover:before:scale-x-100 lg:before:content-[''] lg:before:absolute lg:before:top-0 lg:before:left-0 lg:before:h-[2px] lg:before:w-full lg:before:bg-orange-500 lg:before:origin-left lg:before:transition-transform lg:before:scale-x-0 h-full flex items-center">Contact
                             <i class='fa fa-send-o group-hover:text-orange-500 ml-2'></i>
-                        </li></a>
-                    </ul>   
+                        </a></li>
+                    </ul>
                 </div>
+
+                <label class="lg:hidden p-2 cursor-pointer" for="nav-check">
+                    <i class='bx bx-menu text-2xl'></i>
+                </label>
             </nav>
             
 
-            <div class="flex justify-between items-center h-[90%] w-[100%] gap-14">
-                <div class="flex flex-col justify-evenly gap-6 w-[40%] h-[90%]">
-                    <div class="w-[50%]">
-                        <h6 class="uppercase text-gray-500 font-medium text-2xl animat">Hello, my name is</h6>
+            <div class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center md:h-[80%] w-full">
+                <div class="flex flex-col justify-evenly gap-6 md:w-1/2 md:h-3/4 w-full max-md:items-center">
+                    <div class="lg:w-[40%] md:w-[50%]">
+                        <h6 class="uppercase text-gray-500 font-medium lg:text-2xl md:text-xl animat">Hello, my name is</h6>
                         <div class="h-[1px] w-8 bg-slate-600 mt-1"></div>
                     </div>
 
                     <div>
-                        <h1 class="playfont-hd text-black text-5xl">Mohammed Arshad</h1>
-                        <h3 class="playfont-hd text-orange-500 text-4xl pt-3">Full Stack Developer</h3>
+                        <h1 class="playfont-hd text-black lg:text-5xl md:text-4xl sm:text-5xl text-3xl">Mohammed Arshad</h1>
+                        <h3 class="playfont-hd text-orange-500 lg:text-4xl md:text-3xl md:mt-3 mt-1 sm:text-4xl text-center md:text-start text-2xl">Full Stack Developer</h3>
                     </div>
 
-                    <div class="flex flex-col gap-3">
-                        <div class="flex space-x-3 items-center text-2xl text-gray-800 group">
+                    <div class="flex flex-col gap-3 max-md:items-center">
+                        <div class="flex space-x-3 items-center lg:text-2xl text-gray-800 group sm:text-xl">
                             <i class="fa fa-envelope group-hover:text-red-700"></i>
                             <span>arshadcheruputhore@gmail.com</span>
                         </div>
@@ -77,17 +90,16 @@
                             <ul class="flex justify-start gap-4">
                                 <a href="https://www.instagram.com/arshadcheruputhore/" class="transform hover:scale-125 transition-transform duration-300"><li class="text-3xl hover:text-rose-500"><i class='bx bxl-instagram' ></i></li></a>
                                 <a href="https://www.facebook.com/mohammedarshad.c.3" class="transform hover:scale-125 transition-transform duration-300"><li class="text-3xl hover:text-blue-700"><i class='bx bxl-facebook-square' ></i></li></a>
-                                <a href="https://github.com/arshadc01" class="transform hover:scale-125 transition-transform duration-300"><li class="text-3xl hover:text-black"><i class='bx bxl-github' ></i></li></a>
+                                <a href="https://github.com/arshadcheruputhore" class="transform hover:scale-125 transition-transform duration-300"><li class="text-3xl hover:text-black"><i class='bx bxl-github' ></i></li></a>
                                 <a href="https://www.linkedin.com/in/arshadcheruputhore/" class="transform hover:scale-125 transition-transform duration-300"><li class="text-3xl hover:hover:text-blue-700"><i class='bx bxl-linkedin-square' ></i></li></a>
                             </ul>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="w-[60%] h-[90%]">
-                    <div class="flex justify-center items-center">
-                        <img src="images/Arshad_Photo_1-removebg-preview.png" alt="" class="pic w-[500px] h-[500px]">
+                <div class="md:h-full lg:w-2/5 md:w-1/2 max-md:h-[70vh] max-md:w-72">
+                    <div class="w-full md:h-[90%] h-full">
+                        <img src="images/Arshad_Photo_1-removebg-preview.png" alt="" class="pic w-full h-full object-cover object-center rounded-[10%]">
                     </div>
                 </div>
             </div>
@@ -95,34 +107,34 @@
         
         <div class="">
             <a href="#home">
-            <button class="fixed bottom-6 right-4 text-base text-black p-3 shadow-xl bg-orange-100 rounded-full w-20 h-20 hover:text-white hover:bg-orange-500 hover:h-28 cursor-pointer transition-all duration-500">
-                <i class="fa fa-angle-double-up hover:pb-7 h-full w-full" style="font-size: 50px;"></i>
+            <button class="fixed bottom-6 right-4 text-black p-1 shadow-xl bg-orange-100 rounded-full md:w-20 md:h-20 w-14 h-14 hover:text-white hover:bg-orange-500 md:hover:h-28 hover:pb-10 cursor-pointer transition-all duration-500 hover:h-20 text-center">
+                <i class="fa fa-angle-double-up hover:pb-7 text-2xl md:text-4xl"></i>
             </button></a>
         </div>
     </section>
 
     <!-- section-about -->
-    <section id="about" class="flex justify-center flex-wrap">
-        <div class="flex flex-col justify-around w-[80%] h-full flex-wrap">
+    <section id="about" class="flex justify-center lg:h-screen h-auto">
+        <div class="flex flex-col justify-evenly lg:w-[80%] w-[90%] h-full max-lg:gap-5 max-md:mt-10">
 
-            <div class="flex flex-col gap-3 justify-center h-[60%] flex-wrap">
-                <div class="text-5xl text-orange-500 font-bold playfont-hd"><h3>About Me</h3></div>
-                <div class="playfont-hd text-5xl leading-snug">
+            <div class="flex flex-col lg:gap-3 gap-6 lg:justify-evenly max-lg:py-5">
+                <div class="sm:text-5xl max-lg:text-center text-orange-500 font-bold playfont-hd text-3xl"><h3>About Me</h3></div>
+                <div class="playfont-hd md:leading-normal md:text-4x xl:text-5xl xl:leading-relaxed text-3xl leading-relaxed sm:text-justify text-wrap text-center">
                     <h1>I am an enthusiastic web developer specializing in the MERN stack, with extensive experience in website and product design.</h1>
                 </div>
             </div>
 
-            <div class="flex justify-center items-start w-[100%] h-[40%] flex-wrap">
-                <div class="w-[40%] playfont-hd text-orange-500 text-4xl">
+            <div class="flex justify-center items-start w-full flex-col md:flex-row md:max-lg:gap-5">
+                <div class="md:w-[40%] playfont-hd text-orange-500 text-4xl">
                     <h3>I design professional & beautiful websites</h3>
                 </div>
 
-                <div class="flex flex-col w-[60%] justify-around items-start gap-4 flex-wrap">
-                    <div class="text-base text-black font-medium">
+                <div class="flex flex-col md:w-[60%] justify-around items-start gap-4 max-md:py-8">
+                    <div class="text-base text-black font-medium md:text-justify text-center">
                         <p>I am a passionate Full Stack Developer with expertise in the MERN stack. My journey in web development has equipped me with the skills to build robust, dynamic applications. I thrive on solving complex challenges and continuously learning new technologies. My goal is to deliver high-quality, scalable solutions that make a positive impact.</p>
                     </div>
-                    <div class="text-sm text-neutral-600">
-                        <p>I have hands-on experience working on live projects, focusing on both UI design and full-stack development. My work involves translating design concepts into responsive, user-friendly interfaces using modern web technologies. I have successfully collaborated with cross-functional teams to deliver high-quality applications that meet client expectations. Currently, I am interning at <strong>Bridgeon</strong>, where I am further refining my skills in UI/UX design and front-end development. This role has given me valuable insights into industry standards and best practices, enhancing my ability to contribute effectively to real-world projects.</p>
+                    <div class="text-sm text-neutral-600 text-justify leading-relaxed">
+                        <p>I have hands-on experience working on live projects, focusing on both UI design and full-stack development. My work involves translating design concepts into responsive, user-friendly interfaces using modern web technologies. I have successfully collaborated with cross-functional teams to deliver high-quality applications that meet client expectations. Currently, I am interning at <strong>LUMINAR TECHNOLAB</strong>, where I am further refining my skills in Front End & Back End development. This role has given me valuable insights into industry standards and best practices, enhancing my ability to contribute effectively to real-world projects.</p>
                     </div>
                     <div class="text-sm text-orange-800 hover:text-orange-500">
                         <a href="">READ MORE...</a>
@@ -133,51 +145,47 @@
     </section>
 
     <!-- section-what i do -->
-        <section class="flex justify-center flex-wrap">
-        <div class="flex flex-col w-[80%] h-full gap-10 justify-center flex-wrap">
+        <section class="flex justify-center lg:h-[80vh] h-auto">
+        <div class="flex flex-col lg:w-[80%] w-[90%] h-full gap-10 justify-center md:justify-evenly max-lg:mt-16 pb-8">
 
-            <div class="playfont-hd text-orange-500 text-5xl">
+            <div class="playfont-hd text-orange-500 sm:text-5xl max-lg:text-center text-4xl">
                 <h1>What I do</h1>
             </div>
 
-            <div class="flex justify-between items-center w-[100%] ">
-                <div class="text-lg text-neutral-600 w-[50%] flex justify-start">
+            <div class="flex max-md:flex-col justify-between w-[100%] items-center">
+                <div class="md:text-lg text-neutral-600 md:w-[50%] w-full flex md:text-start text-center">
                     <p>From understanding your requirements, designing a blueprint and delivering the final product, I do everything that falls in between these lines.</p>
                 </div>
 
-                <div class="w-[50%] flex justify-end">
-                    <a href="" class="text-8xl text-orange-800 hover:text-orange-500 transition-transform duration-500 hover:translate-x-5">
+                <div class="md:w-[50%] w-full flex md:justify-end justify-center">
+                    <a href="" class="lg:text-8xl md:text-6xl text-5xl text-orange-800 hover:text-orange-500 transition-transform duration-500 hover:translate-x-5">
                         <span>&#10230;</span>
                     </a>
                 </div>          
             </div>
 
-            <div class="flex justify-evenly self-center gap-10">
-                <div class="flex gap-2 items-start justify-center">
-                    <div><img src="images/logo.svg" alt="" class="w-60"></div>
-                    <div>
-                        <div class="font-semibold text-xl"><h3>UI/UX DESIGN</h3></div>
-                        <div class="text-base text-neutral-600 my-5"><p>I specialize in creating intuitive and visually appealing user interfaces that enhance the overall user experience. My approach involves thorough research and user-centered design principles to ensure that each product is both functional and aesthetically pleasing. I focus on designing responsive layouts that adapt seamlessly across devices. </p></div>
+            <div class="grid md:grid-cols-3 grid-cols-1 max-md:gap-6 justify-evenly items-center md:items-start">
+                <div class="flex flex-col md:flex-row gap-2 md:items-start items-center justify-center md:justify-start lg:pr-10 md:pr-7">
+                    <div class=""><img src="images/logo.svg" alt="" class="md:w-72 w-10"></div>
+                    <div class="max-md:flex max-md:flex-col items-center">
+                        <div class="font-semibold sm:text-xl text-lg"><h3>FRONT END DEVELOPMENT</h3></div>
+                        <div class="text-base text-neutral-600 my-5 lg:text-justify md:text-start text-center"><p>I specialize in front-end development, creating visually appealing, user-friendly, and responsive web interfaces. With expertise in modern technologies like HTML, CSS, JavaScript, and frameworks such as React and Tailwind CSS, I build dynamic and engaging user experiences. My focus is on delivering seamless functionality and design across various devices and platforms.</p></div>
                     </div>
                 </div>
 
-                <div class="w-1 h-64 bg-slate-200"></div>
-
-                <div class="flex gap-2 items-start justify-center">
-                    <div><img src="images/web.svg" alt="" class="w-60"></div>
-                    <div>
-                        <div class="font-semibold text-xl"><h3>WEB DEVELOPMENT</h3></div>
-                        <div  class="text-base text-neutral-600 my-5"><p>I build dynamic, responsive websites using modern web technologies. My expertise in full-stack development allows me to create seamless and efficient web applications. I focus on delivering high-performance solutions that meet client needs and enhance user engagement.</p></div>
+                <div class="flex flex-col md:flex-row gap-2 md:items-start items-center justify-center md:justify-start lg:px-10 md:px-7 md:border-x">
+                    <div><img src="images/web.svg" alt="" class="md:w-72 w-10"></div>
+                    <div class="max-md:flex max-md:flex-col items-center">
+                        <div class="font-semibold sm:text-xl text-lg"><h3>WEB DEVELOPMENT</h3></div>
+                        <div  class="text-base text-neutral-600 my-5 lg:text-justify text-center"><p>I build dynamic, responsive websites using modern web technologies. My expertise in full-stack development allows me to create seamless and efficient web applications. I focus on delivering high-performance solutions that meet client needs and enhance user engagement.</p></div>
                     </div>
                 </div>
                 
-                <div class="w-1 h-64 bg-slate-200"></div>
-
-                <div class="flex gap-2 items-start justify-center">
-                    <div><img src="images/app.svg" alt="" class="w-60"></div>
-                    <div>
-                        <div class="font-semibold text-xl"><h3>APP DEVELOPMENT</h3></div>
-                        <div class="text-base text-neutral-600 my-5"><p>I develop user-friendly mobile applications that deliver smooth and intuitive experiences. My focus is on creating scalable and efficient apps that run seamlessly across multiple platforms. I ensure that each app is optimized for performance and meets the specific needs of its users.</p></div>
+                <div class="flex flex-col md:flex-row gap-2 md:items-start items-center justify-center md:justify-start lg:pl-10 md:pl-7">
+                    <div><img src="images/app.svg" alt="" class="md:w-72 w-10"></div>
+                    <div class="max-md:flex max-md:flex-col items-center">
+                        <div class="font-semibold sm:text-xl text-lg"><h3>BACK END DEVELOPMENT</h3></div>
+                        <div class="text-base text-neutral-600 my-5 lg:text-justify text-center"><p>II excel in backend development, ensuring robust and efficient server-side functionality for web applications. With expertise in Node.js, Express.js, and database management systems like MongoDB and MySQL, I build scalable APIs and manage data securely. My focus is on creating reliable architectures that support seamless integration with front-end interfaces and provide an optimized user experience.</p></div>
                     </div>
                 </div>
 
@@ -194,16 +202,16 @@
     </section-bg>
     
     <!-- section-skills -->
-    <section class="flex justify-center flex-wrap" id="skills">
-        <div class="flex w-[80%] h-full flex-wrap">
+    <section class="flex justify-center md:h-screen h-auto" id="skills">
+        <div class="flex lg:w-[80%] w-[90%]  h-full flex-col md:flex-row max-md:mt-24 gap-24 max-md:pb-14">
             
-            <div id="skills-section" class="w-[50%] flex h-full justify-center items-center flex-wrap">
-                <div class="flex flex-col w-full h-[70%] gap-20 justify-start">
-                    <div class="playfont-hd text-orange-500 text-5xl">
+            <div id="skills-section" class="md:w-[50%] w-full flex h-full justify-center items-center">
+                <div class="flex flex-col w-full h-[70%] md:gap-20 gap-10 justify-start">
+                    <div class="playfont-hd text-orange-500 sm:text-5xl text-4xl max-md:text-center">
                         <h2>Skills</h2>
                     </div>
             
-                    <div class="range-bar flex flex-col gap-7 w-[90%]">
+                    <div class="range-bar flex flex-col gap-7 md:w-[90%] w-full">
                         <div>
                             <div><span class="text-lg text-neutral-600 font-medium">HTML</span></div>
                             <div class="w-full h-auto bg-white rounded-full shadow-2xl">
@@ -236,26 +244,26 @@
             </div>
             
 
-            <div class="w-[50%] flex flex-col justify-center flex-wrap">
-                <div class="flex flex-col  justify-evenly items-center w-full h-[70%]">
-                    <div class="flex">
-                        <ul class="flex justify-start gap-10">
+            <div class="md:w-[50%] w-full flex flex-col justify-center">
+                <div class="flex flex-col justify-evenly items-center w-full h-[70%] max-md:gap-16">
+                    <div class="w-full">
+                        <ul class="flex md:justify-center items-center gap-10 justify-evenly w-full">
                             <li><img src="images/html.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                             <li><img src="images/css.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                             <li><img src="images/javascript.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
-                            <li><img src="images/figma.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
+                            <li><img src="images/typescript.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="flex justify-start gap-10">
-                            <li><img src="images/python.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
-                            <li><img src="images/php.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
-                            <li><img src="images/c.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
-                            <li><img src="images/java.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
+                    <div class="w-full">
+                        <ul class="flex md:justify-center items-center gap-10 justify-evenly w-full">
+                            <li><img src="images/bootstrap.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
+                            <li><img src="images/tailwind.png" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
+                            <li><img src="images/git.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
+                            <li><img src="images/angular.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="flex justify-start gap-10">
+                    <div class="w-full">
+                        <ul class="flex md:justify-center items-center gap-10 justify-evenly w-full">
                             <li><img src="images/mongodb.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                             <li><img src="images/react.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
                             <li><img src="images/node-js.svg" alt="" class="w-24 opacity-80 hover:opacity-100 transform hover:scale-125 transition-transform duration-700"></li>
@@ -268,115 +276,110 @@
     </section>
 
         <!-- section-project -->
-        <section id="projects" class="flex justify-center">
-        <div class="flex flex-col w-[80%] h-ful">
+        <section id="projects" class="flex justify-center lg:h-screen h-auto">
+        <div class="flex flex-col lg:w-[80%] w-[90%] h-full max-md:mt-14 max-md:pb-8 justify-between">
 
-            <div class="flex justify-cente w-full h-[10%] items-center">
-                <div class="flex justify-start w-[50%] text-5xl text-orange-500 font-bold playfont-hd">
+            <div class="flex justify-center w-full h-[10%] items-center flex-col md:flex-row">
+                <div class="flex justify-start md:w-[50%] sm:text-5xl text-orange-500 font-bold playfont-hd text-4xl">
                     <h2>Projects</h2>
                 </div>
-                <div class="flex justify-end w-[50%]">
-                    <a href="" class="text-8xl text-orange-800 hover:text-orange-500 transition-transform duration-500 hover:translate-x-5">
+                <div class="flex justify-end md:w-[50%]">
+                    <a href="" class="md:text-8xl text-5xl text-orange-800 hover:text-orange-500 transition-transform duration-500 hover:translate-x-5">
                         <span>&#10230;</span>
                     </a>
                 </div>
             </div>
 
-            <div class="flex w-full h-[90%]">
-                <div class="flex flex-col w-[50%] h-full gap-5 justify-center">
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/healthfare.png" alt="" class="w-full h-full object-contain ">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full h-[90%] gap-10 place-content-evenly max-lg:mt-8">
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://whimsical-bunny-4fec0b.netlify.app/" target="_blank">
+                            <img src="images/BAM.png" alt="" class="w-full h-full object-contain">
                         </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
-                            <p>Healthfare (Diet Recommendation)</p>
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
+                            <p>BOOKS-A-MILLION</p>
                         </div>
-                    </div></a>
+                    </a></div>
                     
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/w3 nav.png" alt="" class="w-full h-full object-contain">
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://airbnb-seven-psi.vercel.app/" target="_blank">
+                            <img src="images/airbnb-clone.png" alt="" class="w-full h-full object-contain">
                         </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
-                            <p>W3 Navigation Bar</p>
-                        </div>
-                    </div></a>
-
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/portfolio.png" alt="" class="w-full h-full object-contain">
-                        </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
-                            <p>Personal Portfolio</p>
-                        </div>
-                    </div></a>
-                </div>
-                
-                <div class="flex flex-col w-[50%] h-full gap-5 justify-center items-end">
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/airbnb.png" alt="" class="w-full h-full object-contain">
-                        </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
                             <p>Airbnb Clone</p>
                         </div>
-                    </div></a>
+                    </a></div>
 
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/bank balance.png" alt="" class="w-full h-full object-contain">
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://apple-clone-seven-rouge.vercel.app/" target="_blank">
+                            <img src="images/apple-clone.png" alt="" class="w-full h-full object-contain">
                         </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
-                            <p>Bank Balance Checker</p>
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
+                            <p>Apple Watches Clone</p>
                         </div>
-                    </div></a>
+                    </a></div>
 
-                    <div class="flex flex-col w-[95%] h-[30%] bg-orange-50 rounded-lg shadow-lg group">
-                        <div class="w-full h-[80%] group-hover:-translate-y-3 transition-transform duration-500"><a href="">
-                            <img src="images/js calcalutor.png" alt="" class="w-full h-full object-contain">
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://digital-clock-two-iota.vercel.app/" target="_blank">
+                            <img src="images/js digi-clock.png" alt="" class="w-full h-full object-contain">
                         </div>
-                        <div class="w-full h-[20%] text-lg text-black font-semibold text-center py-2 group-hover:text-orange-500">
-                            <p>JavaScript Calculator</p>
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
+                            <p>JS Digital Clock</p>
                         </div>
-                    </div></a>
+                    </a></div>
+                    
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://js-calculator-seven-ruby.vercel.app/" target="_blank">
+                            <img src="images/js-calculator.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
+                            <p>JS Calculator</p>
+                        </div>
+                    </a></div>
+
+                    <div class="flex flex-col shadow-xl bg-white gap-3 rounded-2xl hover:bg-orange-500 group">
+                        <div class="w-full"><a href="https://arshadcheruputhore.netlify.app/">
+                            <img src="images/portfolio.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full text-lg text-black font-semibold text-center py-2 group-hover:text-white">
+                            <p>Personal Portfolio</p>
+                        </div>
+                    </a></div>
                 </div>
-
-            </div>
         </div>
         </section>
 
         <!-- section-contact -->
-        <section class="flex justify-center" id="contact">
-        <div class="w-[80%] h-full flex">
-            <div class="flex justify-center w-[40%] h-full">
-                <div class="flex flex-col w-full h-[60%] justify-around">
-                    <div class="text-5xl text-orange-500 font-bold playfont-hd">
+        <section class="flex justify-center lg:h-screen" id="contact">
+        <div class="lg:w-[80%] w-[90%] h-full flex flex-col lg:flex-row max-lg:mt-20 max-lg:pb-8">
+            <div class="flex justify-center lg:w-[40%] w-full h-full">
+                <div class="flex flex-col w-full lg:h-[60%] justify-center max-lg:gap-8 lg:justify-around">
+                    <div class="lg:text-5xl text-4xl text-orange-500 font-bold playfont-hd max-lg:text-center">
                         <h2>Contact</h2>
                     </div>
-                    <div class="flex flex-col gap-10">
-                        <div class="text-5xl text-black font-bold playfont-hd">
+                    <div class="flex flex-col lg:gap-10 gap-6 max-lg:justify-center max-lg:items-center">
+                        <div class="lg:text-5xl text-black font-bold playfont-hd max-lg:text-center text-4xl">
                             <h2>Send me a message</h2>
                         </div>
-                        <div class="text-lg text-neutral-600">
+                        <div class="text-lg text-neutral-600 max-lg:text-center">
                             <p>Whether you wish to discuss new ideas or have a project for me, simply fill this form and I’ll get back to you soon.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex w-[60%] h-full">
+            <div class="flex lg:w-[60%] w-full h-full">
                 <div class="flex justify-center items-center w-full h-full">
-                    <div class="flex flex-col justify-between w-[90%] h-[60%]">
+                    <div class="flex flex-col justify-between lg:w-[90%] lg:h-[60%] w-full max-lg:gap-7">
                         <div>
                             <div>
                                 <label for="fullName" class="text-lg text-neutral-600 font-semibold">Name </label><span class="text-xl text-red-500">*</span>
                             </div>
-                            <div class="flex gap-5 w-full">
-                                <div class="w-[50%] h-14">
+                            <div class="flex gap-5 w-full flex-col sm:flex-row max-sm:gap-8">
+                                <div class="sm:w-[50%] h-14 w-full">
                                     <div class="w-full h-full"><input type="text" name="" id="fname" class="outline-none w-full h-full text-lg p-4 font-medium border"></div>
                                     <label for="fname" class="text-lg text-neutral-500">First</label>
                                 </div>
-                                <div class="w-[50%] h-14">
+                                <div class="sm:w-[50%] h-14 w-full">
                                     <div class="w-full h-full"><input type="text" name="" id="lname" class="outline-none w-full h-full text-lg p-4 font-medium border"></div>
                                     <label for="lname" class="text-lg text-neutral-500">Last</label>
                                 </div>
@@ -396,7 +399,7 @@
                             </div>
                             <div class="w-full h-full"><textarea name="" id="msg" rows="3" cols="3" class="outline-none w-full h-full text-lg p-4 font-medium border"></textarea></div>
                         </div>
-                        <div class="flex justify-center w-full h-16">
+                        <div class="flex justify-center w-full h-16 max-lg:mt-4">
                             <div class="flex justify-center items-center w-24 h-full text-lg font-semibold text-orange-500 p-5 rounded-lg cursor-pointer hover:bg-orange-500 hover:text-white hover:transition-all shadow-md">
                                 <input type="submit" type="button" value="SUBMIT" class="cursor-pointer" onclick="sendMail()">
                             </div>
@@ -408,17 +411,17 @@
         </section>
 
         <!-- section-footer -->
-        <footer class="w-[100vw] h-[70vh] bg-white p-0 m-0 flex flex-col">
-            <div class=" flex justify-center items-center w-full h-[75%]">
-                <div class="flex w-full h-full">
-                    <div class="w-[50%] h-full flex justify-center items-center">
-                        <div class="text-7xl text-black font-bold playfont-hd underline hover:text-orange-500 hover:transition-all duration-700">
+        <footer class="w-[100vw] lg:h-[70vh] h-auto bg-white flex flex-col">
+            <div class=" flex justify-center items-center w-full lg:h-[75%] max-lg:py-20">
+                <div class="flex w-full h-full flex-col lg:flex-row sm:max-lg:gap-24 max-sm:gap-16">
+                    <div class="lg:w-[50%] w-full h-full flex justify-center items-center">
+                        <div class="sm:text-7xl text-5xl text-black font-bold playfont-hd underline hover:text-orange-500 hover:transition-all duration-700">
                             <a href="#contact"><h1>Get in touch</h1></a>
                         </div>
                     </div>
 
-                    <div class="w-[50%] flex justify-start items-start">
-                        <div class="flex w-full h-full justify-around items-center">
+                    <div class="lg:w-[50%] w-full flex lg:justify-start lg:items-start">
+                        <div class="flex w-full h-full lg:justify-around items-center justify-center sm:max-lg:gap-32 max-sm:gap-12 flex-col sm:flex-row">
                             <div class="flex flex-col gap-5">
                                 <h3 class="text-black text-3xl font-bold playfont-hd">Social</h3>
                                 <ul class="text-base text-neutral-600">
@@ -459,12 +462,13 @@
                 </div>
             </div>
 
-            <div class="h-[25%] w-full border-t">
-                <div class="flex justify-center items-center w-full h-full text-lg text-neutral-500">
+            <div class="lg:h-[25%] w-full border-t max-lg:py-6 max-lg:px-4">
+                <div class="flex justify-center items-center w-full h-full text-lg text-neutral-500 max-lg:text-center">
                     <h4>Copyright © 2024 Portfolio | Powered by Arshad</h4>
                 </div>
             </div>
         </footer>
     
+<script src="index.js"></script>
 </body>
 </html>
